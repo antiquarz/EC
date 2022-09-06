@@ -1,4 +1,5 @@
-<?php header('Access-Control-Allow-Origin: *'); ?>
+<?php 
+header('Access-Control-Allow-Origin: *'); ?>
 
 
 <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
