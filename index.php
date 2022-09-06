@@ -1,5 +1,9 @@
 <?php 
-header('Access-Control-Allow-Origin: *'); ?>
+header('Access-Control-Allow-Origin: *');
+
+header('Access-Control-Allow-Methods: GET, POST');
+
+header("Access-Control-Allow-Headers: X-Requested-With");?>
 
 
 <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
