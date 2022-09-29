@@ -10,9 +10,9 @@ const options = {
   cert: fs.readFileSync('./localhost.pem')
 };
 
-app.use((req, res, next) => {
-  res.send('<h1>HTTPS is working!</h1>');
-});
+// app.use((req, res, next) => {
+//   res.send('<h1>HTTPS is working!</h1>');
+// });
 
 const port = 3000;
 
