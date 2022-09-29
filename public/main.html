@@ -7,7 +7,8 @@
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
     <script>
-      window.onload = () => {                       navigator.geolocation.getCurrentPosition((position) => {
+      window.onload = () => {                       
+        navigator.geolocation.getCurrentPosition((position) => {
         document.querySelector('a-text').setAttribute('gps-entity-place', `latitude: ${position.coords.latitude}; longitude: ${position.coords.longitude};`)
       });
      }
@@ -25,7 +26,7 @@
         look-at="[gps-camera]"
         scale="5 5 5"
       ></a-text>
-      <a-camera gps-camera rotation-reader> </a-camera>
+      <a-camera gps-camera rotation-reader positionMinAccuracy="0" look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.2'> </a-camera>
     </a-scene>
   </body>
 </html>
